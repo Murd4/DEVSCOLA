@@ -11,7 +11,7 @@ if [[ $opt1 == "tree" ]]; then
 	mkdir -p 1/2/3
 	touch 1/2/3/foo
 	echo " -> Folder tree created."
-	read -p "Do you want to display the tree? [y/n] (It might not work if 'tree' is not installed.)" opt2
+	read -p "Do you want to display the tree? [y/n] ('tree' must be installed.)" opt2
 	if [[ $opt2 == "y"  ]]; then
 		tree 1
 	fi
